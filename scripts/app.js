@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   function getWeather() {
     $.ajax({
-      url : "http://api.wunderground.com/api/4e1fe0d302980707/geolookup/conditions/q/NY/Manhattan.json",
+      url : "http://api.wunderground.com/api/4e1fe0d302980707/geolookup/conditions/q/GA/Atlanta.json",
       dataType : "jsonp",
       success : function(parsed_json) {
         var conditions = parsed_json.current_observation.weather;
